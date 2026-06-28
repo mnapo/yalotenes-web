@@ -1,0 +1,212 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Auriculares Bluetooth Pro",
+      "price": 89990,
+      "originalPrice": 129990,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
+      "category": "Audio",
+      "discount": 30
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch Ultra",
+      "price": 199990,
+      "originalPrice": 299990,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+      "category": "Wearables",
+      "discount": 33
+    },
+    {
+      "id": 3,
+      "name": "Teclado Mecánico RGB",
+      "price": 79990,
+      "originalPrice": 99990,
+      "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&h=400&fit=crop",
+      "category": "Periféricos",
+      "discount": 20
+    },
+    {
+      "id": 4,
+      "name": "Monitor 27\" 4K",
+      "price": 349990,
+      "originalPrice": 449990,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&h=400&fit=crop",
+      "category": "Monitores",
+      "discount": 22
+    },
+    {
+      "id": 5,
+      "name": "Cámara Mirrorless 4K",
+      "price": 899990,
+      "originalPrice": 1199990,
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop",
+      "category": "Fotografía",
+      "discount": 25
+    },
+    {
+      "id": 6,
+      "name": "Tablet Pro 12.9\"",
+      "price": 699990,
+      "originalPrice": 899990,
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop",
+      "category": "Tablets",
+      "discount": 22
+    },
+    {
+      "id": 7,
+      "name": "Laptop Gaming 15.6\" RTX 4070",
+      "price": 1299990,
+      "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=400&fit=crop",
+      "category": "Laptops"
+    },
+    {
+      "id": 8,
+      "name": "Mouse Ergonómico Wireless",
+      "price": 49990,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop",
+      "category": "Periféricos"
+    },
+    {
+      "id": 9,
+      "name": "Webcam 4K Ultra HD",
+      "price": 89990,
+      "image": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=400&h=400&fit=crop",
+      "category": "Accesorios"
+    },
+    {
+      "id": 10,
+      "name": "Parlante Bluetooth Portátil",
+      "price": 59990,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop",
+      "category": "Audio"
+    },
+    {
+      "id": 11,
+      "name": "SSD NVMe 1TB",
+      "price": 79990,
+      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop",
+      "category": "Almacenamiento"
+    },
+    {
+      "id": 12,
+      "name": "Hub USB-C 7 en 1",
+      "price": 39990,
+      "image": "https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&h=400&fit=crop",
+      "category": "Accesorios"
+    },
+    {
+      "id": 13,
+      "name": "Cargador Inalámbrico 15W",
+      "price": 29990,
+      "image": "https://images.unsplash.com/photo-1586816879360-004f5b0c51e5?w=400&h=400&fit=crop",
+      "category": "Accesorios"
+    },
+    {
+      "id": 14,
+      "name": "Micrófono Condensador USB",
+      "price": 119990,
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&h=400&fit=crop",
+      "category": "Audio"
+    },
+    {
+      "id": 15,
+      "name": "Disco Duro Externo 2TB",
+      "price": 69990,
+      "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=400&h=400&fit=crop",
+      "category": "Almacenamiento"
+    },
+    {
+      "id": 16,
+      "name": "Router WiFi 6 Mesh",
+      "price": 159990,
+      "image": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400&h=400&fit=crop",
+      "category": "Redes"
+    },
+    {
+      "id": 17,
+      "name": "Silla Gaming Pro",
+      "price": 249990,
+      "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400&h=400&fit=crop",
+      "category": "Mobiliario"
+    },
+    {
+      "id": 18,
+      "name": "Gamepad Inalámbrico",
+      "price": 59990,
+      "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=400&h=400&fit=crop",
+      "category": "Gaming"
+    },
+    {
+      "id": 19,
+      "name": "Set de Cubiertos Minimalista",
+      "price": 29990,
+      "image": "https://images.unsplash.com/photo-1516685018646-549d6f3deb5e?w=400&h=400&fit=crop",
+      "category": "Cubiertos"
+    },
+    {
+      "id": 20,
+      "name": "Vajilla Moderna 16 piezas",
+      "price": 79990,
+      "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400&h=400&fit=crop",
+      "category": "Vajilla"
+    },
+    {
+      "id": 21,
+      "name": "Combo Condimentos Gourmet",
+      "price": 19990,
+      "image": "https://images.unsplash.com/photo-1510626176961-4b5c5e5a5b8b?w=400&h=400&fit=crop",
+      "category": "Condimentos"
+    },
+    {
+      "id": 22,
+      "name": "Kit Decoración Fiesta",
+      "price": 34990,
+      "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=400&h=400&fit=crop",
+      "category": "Decoración"
+    },
+    {
+      "id": 23,
+      "name": "Set de Vasos y Pajitas",
+      "price": 24990,
+      "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=400&h=400&fit=crop",
+      "category": "Bebidas"
+    },
+    {
+      "id": 24,
+      "name": "Bandeja de Postres",
+      "price": 17990,
+      "image": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=400&h=400&fit=crop",
+      "category": "Postres"
+    },
+    {
+      "id": 25,
+      "name": "Organizador Multiuso",
+      "price": 21990,
+      "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=400&h=400&fit=crop",
+      "category": "Orden"
+    },
+    {
+      "id": 26,
+      "name": "Juego de Paños de Cocina",
+      "price": 14990,
+      "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=400&fit=crop",
+      "category": "Limpieza"
+    },
+    {
+      "id": 27,
+      "name": "Spray Multiuso",
+      "price": 12990,
+      "image": "https://images.unsplash.com/photo-1591017446961-2c9ec13ff0b9?w=400&h=400&fit=crop",
+      "category": "Limpieza"
+    },
+    {
+      "id": 28,
+      "name": "Cojín Decorativo Suave",
+      "price": 29990,
+      "image": "https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=400&h=400&fit=crop",
+      "category": "Decoración"
+    }
+  ]
+}

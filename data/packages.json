@@ -1,0 +1,70 @@
+{
+  "packages": [
+    {
+      "id": 1001,
+      "slug": "bazar",
+      "name": "Paquete Bazar",
+      "description": "Incluye todo lo necesario para tu comedor y cocina con estilo práctico.",
+      "productIds": [19, 20, 21],
+      "discountPercentage": 15,
+      "categories": [
+        {
+          "emoji": "🍴",
+          "label": "Cubiertos"
+        },
+        {
+          "emoji": "🍽️",
+          "label": "Vajilla"
+        },
+        {
+          "emoji": "🧂",
+          "label": "Condimentos"
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "slug": "festejo",
+      "name": "Paquete Festejo",
+      "description": "Perfecto para reuniones, con decoración y servicio completo.",
+      "productIds": [22, 23, 24],
+      "discountPercentage": 12,
+      "categories": [
+        {
+          "emoji": "🍴",
+          "label": "Decoración"
+        },
+        {
+          "emoji": "🥤",
+          "label": "Bebidas"
+        },
+        {
+          "emoji": "🍰",
+          "label": "Postres"
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "slug": "hogar",
+      "name": "Paquete Hogar",
+      "description": "Combina confort y orden para renovar tu espacio de día a día.",
+      "productIds": [25, 26, 28],
+      "discountPercentage": 18,
+      "categories": [
+        {
+          "emoji": "🧺",
+          "label": "Orden"
+        },
+        {
+          "emoji": "🍴",
+          "label": "Decoración"
+        },
+        {
+          "emoji": "🧼",
+          "label": "Limpieza"
+        }
+      ]
+    }
+  ]
+}
