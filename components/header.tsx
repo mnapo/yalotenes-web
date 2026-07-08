@@ -16,6 +16,13 @@ export function Header() {
   const router = useRouter()
   const pathname = usePathname()
   const mobileSearchInputRef = useRef<HTMLInputElement | null>(null)
+  const navItems = [
+    { href: "/", label: "Inicio" },
+    { href: "/productos", label: "Productos" },
+    { href: "/paquetes", label: "Paquetes" },
+    { href: "/ofertas", label: "Ofertas" },
+    { href: "/contacto", label: "Contacto" },
+  ]
 
   const handleSearchIconClick = () => {
     setIsMenuOpen(true)
@@ -29,6 +36,10 @@ export function Header() {
     }
   }, [isMenuOpen, shouldFocusSearch])
 
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
   const searchSuggestions = useMemo(() => {
     const trimmedQuery = searchQuery.trim()
     if (!trimmedQuery) return []
@@ -39,7 +50,10 @@ export function Header() {
     event.preventDefault()
     const trimmedQuery = searchQuery.trim()
     router.push(trimmedQuery ? `/buscar?q=${encodeURIComponent(trimmedQuery)}` : "/buscar")
+    setIsMenuOpen(false)
   }
+
+  const isActiveLink = (href: string) => (href === "/" ? pathname === href : pathname.startsWith(href))
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
@@ -107,22 +121,23 @@ export function Header() {
             </div>
           </form>
 
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Inicio
-            </Link>
-            <Link href="/productos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Productos
-            </Link>
-            <Link href="/paquetes" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Paquetes
-            </Link>
-            <Link href="/ofertas" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Ofertas
-            </Link>
-            <Link href="/contacto" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Contacto
-            </Link>
+          <nav className="hidden md:flex items-center gap-2">
+            {navItems.map((item) => {
+              const isActive = isActiveLink(item.href)
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`rounded-full px-3 py-2 text-sm transition-colors ${
+                    isActive
+                      ? "bg-primary/10 font-medium text-primary"
+                      : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
           </nav>
 
           <div className="flex items-center gap-4">
@@ -211,22 +226,24 @@ export function Header() {
               <span className="text-xs text-muted-foreground">Tema</span>
               <ThemeSwitcher />
             </div>
-            <nav className="flex flex-col gap-3">
-              <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Inicio
-              </Link>
-              <Link href="/productos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Productos
-              </Link>
-              <Link href="/paquetes" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Paquetes
-              </Link>
-              <Link href="/ofertas" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Ofertas
-              </Link>
-              <Link href="/contacto" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Contacto
-              </Link>
+            <nav className="flex flex-col gap-2">
+              {navItems.map((item) => {
+                const isActive = isActiveLink(item.href)
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`rounded-lg px-3 py-2 text-sm transition-colors ${
+                      isActive
+                        ? "bg-primary/10 font-medium text-primary"
+                        : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              })}
             </nav>
           </div>
         )}
