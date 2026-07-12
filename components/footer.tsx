@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border py-8 mt-12">
       <div className="px-4 md:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-muted-foreground text-sm">
-          YaLoTenés 2026. Todos los derechos reservados.
+          YaLoTenés© 2026. Todos los derechos reservados.
         </p>
         <nav className="flex gap-6">
           <Link href="/politicas" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
