@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { ProductCard } from "@/components/product-card"
 import { SectionTitle } from "@/components/section-title"
-import { searchProducts, allProducts } from "@/data/products"
+import { searchProducts } from "@/data/products"
 import { Search } from "lucide-react"
 import Link from "next/link"
 
