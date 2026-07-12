@@ -3,7 +3,6 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { OffersCarousel } from "@/components/offers-carousel"
 import { PackageCarousel } from "@/components/package-carousel"
-import { InfoCarousel } from "@/components/info-carousel"
 import { RecentProducts } from "@/components/recent-products"
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       <Header />
       <main className="px-4 md:px-8 lg:px-12 py-8">
         <Hero />
-        <InfoCarousel />
         <OffersCarousel />
         <PackageCarousel />
         <RecentProducts />
