@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function WelcomeSection() {
+export function Hero() {
   return (
     <section className="mb-8 rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-secondary/60 p-6 shadow-sm md:p-8">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
