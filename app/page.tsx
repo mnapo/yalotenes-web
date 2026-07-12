@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Header } from "@/components/header"
+import { WelcomeSection } from "@/components/welcome-section"
 import { OffersCarousel } from "@/components/offers-carousel"
 import { PackageCarousel } from "@/components/package-carousel"
 import { InfoCarousel } from "@/components/info-carousel"
@@ -10,41 +11,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main className="px-4 md:px-8 lg:px-12 py-8">
-        <section className="mb-8 rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-secondary/60 p-6 shadow-sm md:p-8">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <p className="mb-3 inline-flex items-center rounded-full border border-border/70 bg-background/80 px-3 py-1 text-sm font-medium text-muted-foreground">
-                ✨ Productos seleccionados para una compra más simple
-              </p>
-              <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-                Encontrá lo que necesitás con una experiencia más clara y rápida.
-              </h1>
-              <p className="mt-3 max-w-xl text-base text-muted-foreground">
-                Explorá ofertas, paquetes y productos destacados sin perder tiempo en navegación innecesaria.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/productos"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                Ver productos
-              </Link>
-              <Link
-                href="/paquetes"
-                className="inline-flex items-center justify-center rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-              >
-                Ver paquetes
-              </Link>
-              <Link
-                href="/contacto"
-                className="inline-flex items-center justify-center rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-              >
-                Contactar
-              </Link>
-            </div>
-          </div>
-        </section>
+        <WelcomeSection />
         <InfoCarousel />
         <OffersCarousel />
         <PackageCarousel />
