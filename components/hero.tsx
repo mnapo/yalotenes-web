@@ -1,8 +1,18 @@
+"use client"
+
 import Link from "next/link"
 
 import { InfoCarousel } from "@/components/info-carousel"
 
-export function Hero() {
+interface HeroProps {
+  onProductsClick: () => void
+  onPackagesClick: () => void
+}
+
+export function Hero({
+  onProductsClick,
+  onPackagesClick,
+}: HeroProps) {
   return (
     <section className="mb-8 rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-secondary/60 p-6 shadow-sm md:p-8">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-stretch">
@@ -25,19 +35,21 @@ export function Hero() {
           <InfoCarousel variant="hero" />
 
           <div className="flex flex-wrap justify-center gap-3 lg:justify-end">
-            <Link
-              href="/productos"
+            <button
+              type="button"
+              onClick={onProductsClick}
               className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Ver productos
-            </Link>
+            </button>
 
-            <Link
-              href="/paquetes"
+            <button
+              type="button"
+              onClick={onPackagesClick}
               className="inline-flex items-center justify-center rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               Ver paquetes
-            </Link>
+            </button>
 
             <Link
               href="/contacto"
