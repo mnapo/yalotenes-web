@@ -8,6 +8,8 @@ import { OffersCarousel } from "@/components/offers-carousel"
 import { PackageCarousel } from "@/components/package-carousel"
 import { RecentProducts } from "@/components/recent-products"
 
+import { motion } from "motion/react"
+
 export default function Home() {
 
   const productsRef = useRef<HTMLDivElement>(null)
@@ -29,9 +31,17 @@ export default function Home() {
           onProductsClick={scrollToProducts}
           onPackagesClick={scrollToPackages}
         />
-        <OffersCarousel />
-        <div ref={packagesRef}><PackageCarousel /></div>
-        <div ref={productsRef}><RecentProducts /></div>
+        <motion.div layout ref={offersRef}>
+          <OffersCarousel />
+        </motion.div>
+
+        <motion.div layout ref={packagesRef}>
+          <PackageCarousel />
+        </motion.div>
+
+        <motion.div layout>
+          <RecentProducts />
+        </motion.div>
       </main>
     </div>
   )
