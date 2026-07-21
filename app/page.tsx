@@ -31,7 +31,7 @@ export default function Home() {
           onProductsClick={scrollToProducts}
           onPackagesClick={scrollToPackages}
         />
-        <motion.div layout ref={offersRef}>
+        <motion.div layout>
           <OffersCarousel />
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function Home() {
           <PackageCarousel />
         </motion.div>
 
-        <motion.div layout>
+        <motion.div layout ref={productsRef}>
           <RecentProducts />
         </motion.div>
       </main>
